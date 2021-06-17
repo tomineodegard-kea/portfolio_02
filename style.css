@@ -298,13 +298,39 @@ udgangspunkt i top og left */
   width: auto;
 }
 
-/***************** barometer image (make in to html/css if time) *****************/
+/***************** barometer *****************/
+
 .barometer {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  flex-direction: row;
+  width: auto;
   height: auto;
-  width: 80%;
-  padding-top: 2vw;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 3px 3px 7px #c9cccf, -3px -3px 7px #ffffff;
+  padding: 1rem;
 }
 
+.barometer_elm {
+  background-color: #ecf0f3;
+  height: auto;
+  width: 20%;
+  box-shadow: 3px 3px 7px #c9cccf, -3px -3px 7px #ffffff;
+  border-radius: 40px;
+  text-align: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+#blue {
+  background-color: #31628d;
+}
+
+#blue a {
+  color: #c9cccf;
+}
 /***************** container around h1 and h2 on top of page *****************/
 .h1_container {
   display: block;
@@ -364,12 +390,12 @@ udgangspunkt i top og left */
     align-items: center;
     position: relative;
     margin-top: 2rem;
-    margin-bottom: 3rem;
     border-radius: 3rem;
   }
 
   .button_wrapper_nav:hover,
-  .button_wrapper:hover {
+  .button_wrapper:hover,
+  .barometer_elm:hover {
     box-shadow: inset 3px 3px 7px #c9cccf, inset -3px -3px 7px #ffffff;
   }
 
@@ -403,10 +429,13 @@ udgangspunkt i top og left */
     height: 20rem;
   }
 
-  .barometer {
+  /* .barometer {
     height: auto;
     width: 100%;
     padding-top: 2vw;
+  } */
+
+  .barometer:hover {
   }
 
   .h1_container {
