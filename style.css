@@ -1,14 +1,14 @@
 /****************** MOBILE FIRST ******************/
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: #ecf0f3;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 main {
@@ -31,20 +31,33 @@ footer {
   padding-top: 4vw;
 }
 
-.footer_wrapper address {
+.footer_wrapper {
   background-color: #31628d;
+  height: 6rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0px auto;
-  height: 12vw;
   align-items: center;
+}
+
+address {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: #c9cccf;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(0.5rem, 3.7vw - 1.1rem, 1.2rem);
+  text-align: center;
+}
+
+address a {
+  color: #c9cccf;
+  margin: 0 auto;
 }
 
 /* generell button */
 .button_container {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   border: none;
 }
 
@@ -236,6 +249,7 @@ udgangspunkt i top og left */
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 .skill_card {
@@ -344,6 +358,26 @@ udgangspunkt i top og left */
   padding-top: 10vw;
 }
 
+/* 04_animasjon  */
+
+#game_iframe {
+  border-width: 0;
+  border-style: none;
+  border-color: transparent;
+  border-image: none;
+  width: 900px;
+  height: 506.25px;
+}
+
+.game_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.my_game {
+  display: none;
+}
+
 /************* @MEIDA DESKTOP - her er alt som skjer når skjærmen er større enn 800px **************/
 @media (min-width: 800px) {
   #menuknap {
@@ -435,7 +469,9 @@ udgangspunkt i top og left */
     padding-top: 2vw;
   } */
 
-  .barometer:hover {
+  .my_game {
+    text-align: center;
+    padding: 25px;
   }
 
   .h1_container {

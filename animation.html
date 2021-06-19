@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nn">
   <head>
     <meta name="robots" content="noindex" />
 
@@ -18,11 +18,7 @@
 
   <body>
     <header>
-      <a
-        href="index.html"
-        class="logo"
-        alt="memoji takning you to indexpage"
-      ></a>
+      <a href="index.html" class="logo"></a>
       <nav>
         <div id="menuknap">☰</div>
         <ul id="menu" class="hidden">
@@ -41,20 +37,61 @@
         <h2>TEMA 4</h2>
         <h1>ANIMASJON</h1>
       </div>
-
       <section class="neumorphism_card">
         <article class="col_1">
           <div class="col_1_wrapper">
             <img
-              src="mockups/02_web.png"
-              class="mockup_duo"
-              alt="mockup_02_web"
+              src="mockups/animasjon_mockup.png"
+              alt="mobile and macbook mockup"
             />
           </div>
+        </article>
+        <article class="col_2">
+          <div class="col_2_wrapper">
+            <h3>Konseptet</h3>
+            <p>
+              "Hide and seek" er et klikk-spill, som er basert på konseptet til
+              arkade-spillet fra 1975 - whac-a-mole. Spillkarakterene, som har
+              tatt stor inspirasjon fra de originale Powerpuffjentene, leker
+              gjemsel ute i hagen, og din oppgave er å klikke på de før de
+              forsvinner og dukker opp et nytt sted igjen.
+            </p>
+          </div>
+
+          <div class="my_game">
+            <div class="game_wrapper">
+              <iframe
+                src="http://tomineodegard.com/kea/04_animation/spil/index.html"
+                id="game_iframe"
+              >
+              </iframe>
+            </div>
+          </div>
+
           <div class="button_container_left">
             <div class="button_wrapper">
-              <a href="http://tomineodegard.com/kea/04_animation/spil/index.html">Gå tilwebsite</a>
+              <a
+                target="_blank"
+                href="http://tomineodegard.com/kea/04_animation/spil/index.html"
+                >Gå til spillet</a
+              >
             </div>
+
+            <div class="button_wrapper">
+              <a
+                target="_blank"
+                href="http://tomineodegard.com/kea/04_animation/spil/index.html"
+                >Dokumentasjon</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="neumorphism_card">
+        <article class="col_1">
+          <div class="col_1_wrapper">
+            <img src="mockups/animasjon.png" alt="mobile and macbook mockup" />
           </div>
         </article>
 
@@ -62,43 +99,102 @@
           <div class="col_2_wrapper">
             <h3>Hva har jeg lært i dette forløpet?</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Molestias maxime possimus fuga assumenda deleniti similique
-              cupiditate eum commodi a cumque nostrum beatae dicta veritatis eos
-              dignissimos voluptatum praesentium, debitis dolorem at nam velit
-              amet adipisci magnam. Qui reprehenderit tempore cum error rerum,
-              unde illo repellat non voluptate sit reiciendis sequi..
+              Temaet 04_animation gikk kort forklart it på at jeg skulle lage
+              mitt eget spill. Alt av grafikk, UI-elementer, bakgrunner og
+              karakterer skulle vi lage i Adobe Illustrator, også skulle jeg
+              senere ferdigstille dette ved hjelp av HTML, CSS og JavaScript. En
+              prosess som skulle gå fra kreative tankeprosesser, håndtegnede
+              ideer og moodboards til et ferdig programmert spill bygget opp av
+              CSS, JavaScript og HTML.
+            </p>
+
+            <p>
+              Hele denne prosessen begynte med skissering av min spill-idè, samt
+              en papir prototype. Ideen som jeg utviklet her, valgte jeg å ikke
+              gå videre med da jeg ikke var fornøyd. Spillet skulle ta
+              utgangspunkt i de kreative kjennetegnene og hovedtrekkene til noe
+              som allerede eksisterte. Etter jeg hadde gjort grundigere
+              unersøkelser og idèutvikling, i tillegg til videreutvikling av
+              moodboard endte jeg opp med å bli inspirert av Powerpuffjentene.
+              Jeg tegnet de første skissene av mine spill-karakterer på min
+              iPad. Deretter la jeg de over i Adobe Illustrator, hvor jeg brukte
+              pen-tool og shapes for å rentegne de. Jeg endte med å
+              videreutvikle skissene mine ved å prøve meg frem inne i
+              Illustrator. I det samme programmet lagde jeg mine spillskjærmer
+              med bakgrunn, mellomgrunn og forgrunn. Det samme gjaldt for alle
+              mine UI-elementer og sluttskjærmer.
+            </p>
+            <p>
+              For å ha et best mulig utgangspunkt før jeg skulle begynne å kode
+              spillet mitt lagde jeg aktivitets- og statemachinediagrammer.
+              Tanken bak slike diagrammer er at det skal være lettere å holde
+              kontroll over sin JavaScriptog hva som skal skje når. I og med
+              dette var et prosjekt hvor jeg var den eneste utvikleren synes jeg
+              ofte det var overskuelig nok, og hadde ikke ofte behov for å gå
+              tilbake til diagrammene mine. Men slike diagrammer egner seg
+              spesielt godt dersom man skal kode i større team, slik at lle
+              parter er klar over hva som skal kodes, og hva som skal skje på
+              hvilket tidspunkt.
+            </p>
+            <p>
+              Koden bak spillet bygger hovedsakelig på JavaScript med
+              eventListeners som gjorde elemenene klikk-bare og som setter i
+              gang spillets funksjoner. Deretter er det også JavaScripten som
+              setter i gang de uliek CSS animajsonene som gir liv til spillet,
+              og som gjør at elementene beveger seg. JavaSpript er også tatt i
+              bruk for å legge til bakgrunnsmusikken som jeg har tatt fra
+              <a
+                href="https://stock.adobe.com/ie/audio?mv=search&as_channel=sem&as_campclass=nonbrand&as_campaign=DK%7CCPRO%7CStock%7CAWAR%7CAudio%7CGG%7CEN%7C&as_source=google&as_camptype=acquisition&sdid=P79NQV6D&ef_id=Cj0KCQjw5auGBhDEARIsAFyNm9FmtBSHSOpvDGXJl3FZ_Qke2kaLkcj298cyoyh4kw0jdCU_v3Dexo4aAlPoEALw_wcB:G:s&s_kwcid=AL!3085!3!472476705992!e!!g!!royalty%20free%20background%20music!11346750702!118051915424&gclid=Cj0KCQjw5auGBhDEARIsAFyNm9FmtBSHSOpvDGXJl3FZ_Qke2kaLkcj298cyoyh4kw0jdCU_v3Dexo4aAlPoEALw_wcB"
+                >Adobe Stock Music.</a
+              >
             </p>
           </div>
         </article>
       </section>
 
       <section class="neumorphism_card">
-        <div class="h1_container_left">
-          <h3>Spil</h3>
-        </div>
-        <div class="neumorphism_card">
-          <article class="col_1">
-            <div class="col_1_wrapper">
+        <article class="col_1">
+          <div class="col_1_wrapper">
+            <h3>Refleksjoner</h3>
+            <p>
+              En del av oppgaven var også å spille inn egne lydeffekter, for å
+              senere behandle de i Adobe Audition for å blant annet reduere
+              støy. Dette var en del av oppgaven som jeg ikke fikk tid til, da
+              jeg heller valgte å foksere på å ferdigstille produktet.
+            </p>
+            <p>
+              Adobe Illustrator var for meg et helt nytt program, og jeg brukte
+              mye tid på å knote med dette. Jeg er nå i etterkant ganske fornøyd
+              med grafikken, men dersom jeg skulle lagd det på nytt ville jeg
+              helt klart satt et større personlig preg, og ikke tatt like stor
+              direkte inspirasjon fra Powerpuff.
+            </p>
+          </div>
+        </article>
+        <article class="col_2">
+          <div class="col_2_wrapper">
+            <div class="button_container">
+              <div class="button_wrapper">
+                <a
+                  target="_blank"
+                  href="http://tomineodegard.com/kea/04_animation/spil/home.html"
+                  >Gå til dokumentasjons-site</a
+                >
+              </div>
             </div>
-          </article>
-          <article class="col_2">
-            <div class="col_2_wrapper">
-            </div>
-          </section>
-
-          </article>
-        </div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer>
       <div class="footer_wrapper">
         <address>
-          <h4>Tomine Ødegård</h4>
+          Tomine Ødegård
           <a href="mailto:tominneodegard@hotmail.no"
-            ><h4>tomineodegard@hotmail.no</h4></a
+            >tomineodegard@hotmail.no</a
           >
-          <h4>+47 97033835</h4>
+          +47 97033835
         </address>
       </div>
     </footer>
