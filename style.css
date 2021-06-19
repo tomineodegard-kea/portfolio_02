@@ -81,7 +81,7 @@ address a {
 .button_wrapper a {
   color: #31628d;
   display: inline-block;
-  font-size: 1rem;
+  font-size: clamp(0.6rem, 3.2vw - 1rem, 1rem);
 }
 
 /* fonts */
@@ -376,6 +376,21 @@ udgangspunkt i top og left */
 
 .my_game {
   display: none;
+}
+
+/* 05_innhold */
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /************* @MEIDA DESKTOP - her er alt som skjer når skjærmen er større enn 800px **************/
