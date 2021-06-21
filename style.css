@@ -294,21 +294,19 @@ nav {
 
 /******************* skill card *******************/
 .skill_card_wrapper {
-  /* gap: 1rem; */
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   text-align: center;
   padding-bottom: 4rem;
 }
 
 .skill_card {
-  display: block;
   position: relative;
 
   border-radius: 2rem;
   background: #ecf0f3;
   box-shadow: 3px 3px 7px #c9cccf, -3px -3px 7px #ffffff;
-  width: 20%;
   margin: 0.5rem;
 }
 
@@ -613,9 +611,17 @@ iframe {
     padding-top: 0;
   }
 
+  .skill_card_wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
   .skill_card {
     border-radius: 3rem;
-    flex: 20%;
   }
 
   .skill_card:hover {
