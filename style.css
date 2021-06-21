@@ -199,6 +199,7 @@ span {
 header ul li {
   list-style: none;
   margin: 1vw;
+  padding-top: 0.7rem;
 }
 
 header ul li a {
@@ -243,7 +244,7 @@ nav {
 #menu li a {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-size: clamp(0.5rem, 3.7vw - 1.1rem, 1.2rem);
+  font-size: clamp(1rem, 3.7vw - 1.1rem, 1.2rem);
   color: #31628d;
   text-align: center;
   gap: 1rem;
@@ -448,7 +449,7 @@ iframe {
   #menu li a {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    font-size: clamp(0.5rem, 3.7vw - 1.1rem, 1.2rem);
+    font-size: clamp(1rem, 3.7vw - 1.1rem, 1.2rem);
     color: #31628d;
     text-align: center;
     padding: 1rem;
