@@ -198,8 +198,9 @@ span {
 
 header ul li {
   list-style: none;
-  margin: 1vw;
-  padding-top: 0.7rem;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 header ul li a {
@@ -212,7 +213,7 @@ header {
   display: flex;
   font-family: "Raleway", sans-serif;
   justify-content: space-between;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: #ecf0f3;
   box-shadow: 25px 25px 51px #c9cccf;
   height: 6rem;
@@ -224,7 +225,7 @@ header {
 }
 
 nav {
-  display: grid;
+  /* display: grid; */
   text-align: end;
   padding-right: 1.5rem;
 }
@@ -255,7 +256,7 @@ nav {
   list-style-type: none;
   transition: transform 0.3s;
   transform-origin: top right;
-  z-index: 100;
+  background-color: rgba(236, 240, 243, 0.75);
 }
 
 #menu a {
@@ -442,6 +443,10 @@ iframe {
     opacity: 1;
   }
 
+  #menu {
+    margin: 1rem;
+    gap: 1rem;
+  }
   #menu li {
     display: inline-block;
   }
