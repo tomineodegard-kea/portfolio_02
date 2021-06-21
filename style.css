@@ -344,27 +344,24 @@ nav {
 /***************** barometer *****************/
 
 .barometer {
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  flex-direction: row;
-  width: auto;
-  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   border-radius: 40px;
   background: #ecf0f3;
   box-shadow: 3px 3px 7px #c9cccf, -3px -3px 7px #ffffff;
   padding: 1rem;
+  gap: 0.5rem;
 }
 
 .barometer_elm {
   background-color: #ecf0f3;
   height: auto;
-  width: 20%;
+  width: 100%;
   box-shadow: 3px 3px 7px #c9cccf, -3px -3px 7px #ffffff;
   border-radius: 40px;
   text-align: center;
   text-align: center;
-  padding: 1rem;
+  padding: 0.8rem;
 }
 
 #blue {
@@ -539,6 +536,15 @@ iframe {
   .button_wrapper:hover,
   .barometer_elm:hover {
     box-shadow: inset 3px 3px 7px #c9cccf, inset -3px -3px 7px #ffffff;
+  }
+
+  /********** barometer desktop styling *********/
+  .barometer {
+    gap: 1.5rem;
+  }
+
+  .barometer_elm {
+    padding: 1.8rem;
   }
 
   /******************** button *********************/
