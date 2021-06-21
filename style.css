@@ -420,6 +420,12 @@ iframe {
   border: none;
 }
 
+/*********** om meg (slideshow tatt fra w3school) **************/
+.slideshowTomine {
+  border-radius: 2rem;
+  transition: ease-in-out;
+}
+
 /************* @MEIDA DESKTOP - her er alt som skjer når skjærmen er større enn 800px **************/
 @media (min-width: 800px) {
   #menuknap {
